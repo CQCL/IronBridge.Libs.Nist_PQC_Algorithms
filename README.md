@@ -12,6 +12,28 @@ https://csrc.nist.gov/projects/post-quantum-cryptography/
 * https://csrc.nist.gov/projects/post-quantum-cryptography/round-2-submissions
 * https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions
 
+```
+# +-----------+-------------+------------+-------------+------------+
+# |           | NIST_Round2 | CQC_Round2 | NIST_Round3 | CQC_Round3 |
+# +-----------+-------------+------------+-------------+------------+
+# | kem       | frodo       | frodoKEM   |             |            |
+# |           | kyber       | kyber      | kyber       | kyber      |
+# |           | mceliece    | mceliece   | mceliece    | mceliece   |
+# |           | newhope     | newhope    |             |            |
+# |           | ntru        | ntru       | ntru        | ntru       |
+# |           | nts         | nts        |             |            |
+# |           |             |            | saber       | saber      |
+# +-----------+-------------+------------+-------------+------------+
+# | signature | dilithium   | dilithium  | dilithium   | dilithium  |
+# |           | falcon      | falcon     | falcon      | falcon     |
+# |           | picnic      | picnic     |             |            |
+# |           | sphincs     | sphincs    |             |            |
+# |           |             |            | rainbow     | rainbow    |
+# +-----------+-------------+------------+-------------+------------+
+# | support   |             | libkeccak  |             | libkeccak  |
+# |           |             | cqcrandom  |             | cqcrandom  |
+# +-----------+-------------+------------+-------------+------------+
+```
 
 ### Build NIST Crypto Algorithms
 
