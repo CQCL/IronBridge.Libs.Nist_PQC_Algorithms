@@ -1,0 +1,81 @@
+The Picnic Digital Signature Algorithm
+Update for Round 2
+2019-03-30
+
+Melissa Chase, David Derler, Steven Goldfeder, Jonathan Katz, Vladimir
+Kolesnikov, Claudio Orlandi, Sebastian Ramacher, Christian Rechberger, Daniel
+Slamanig, Xiao Wang, Greg Zaverucha
+
+Submission package for the NIST Post-Quantum Cryptography Standardization 
+project 
+https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization
+
+More information about Picnic is available at
+https://microsoft.github.io/Picnic/
+
+All software in this package was tested under Linux and builds with make. 
+
+Package Contents
+
+submission/
+├── Additional_Implementations      Optimized for specific processor features, AVX2 and ARM NEON
+│   ├── picnicl1fs-avx2
+│   ├── picnicl1ur-avx2
+│   ├── picnic2l1fs-avx2
+│   ├── picnicl3fs-avx2
+│   ├── picnicl3ur-avx2
+│   ├── picnic2l3fs-avx2
+│   ├── picnicl5ur-avx2
+│   ├── picnicl5fs-avx2
+│   ├── picnic2l5fs-avx2
+│   ├── picnic2l1fs-neon
+│   ├── picnicl1ur-neon
+│   ├── picnicl1fs-neon
+│   ├── picnicl3fs-neon
+│   ├── picnicl3ur-neon
+│   ├── picnic2l3fs-neon
+│   ├── picnicl5fs-neon
+│   ├── picnicl5ur-neon
+│   ├── picnic2l5fs-neon
+│   ├── picnic2l1fs-sse2
+│   ├── picnicl1fs-sse2
+│   ├── picnicl1ur-sse2
+│   ├── picnicl3fs-sse2
+│   ├── picnicl3ur-sse2
+│   ├── picnic2l3fs-sse2
+│   ├── picnicl5fs-sse2
+│   ├── picnicl5ur-sse2
+│   └── picnic2l5fs-sse2
+├── KAT                         One set KATs per parameter set
+│   ├── picnic2l1fs
+│   ├── picnic2l3fs
+│   ├── picnic2l5fs
+│   ├── picnicl1fs
+│   ├── picnicl1ur
+│   ├── picnicl3fs
+│   ├── picnicl3ur
+│   ├── picnicl5fs
+│   └── picnicl5ur
+├── Optimized_Implementation        Optimized C implementation
+│   ├── picnic2l1fs
+│   ├── picnic2l3fs
+│   ├── picnic2l5fs
+│   ├── picnicl1fs
+│   ├── picnicl1ur
+│   ├── picnicl3fs
+│   ├── picnicl3ur
+│   ├── picnicl5fs
+│   └── picnicl5ur
+├── Reference_Implementation Unoptimized reference implementation
+│   ├── picnicl1fs
+│   ├── picnicl1ur
+│   ├── picnicl3fs
+│   ├── picnicl3ur
+│   ├── picnicl5fs
+│   └── picnicl5ur
+└── Supporting_Documentation
+    ├── Picnic_Cover_Sheet.pdf
+    ├── Picnic_Changes_Round_2.pdf
+    ├── Picnic_Design-v2.0.pdf           Design and security analysis document
+    └── Picnic_Spec-v2.1.pdf             Specification document
+

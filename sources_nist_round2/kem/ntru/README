@@ -1,0 +1,275 @@
+# This file.
+./README
+
+NTRU
+
+NTRU round-2-submission
+(merger of NTRUEncrypt and NTRU-HRSS-KEM)
+
+https://csrc.nist.gov/Projects/post-quantum-cryptography/round-2-submissions
+https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-2/updated-ip-statements/NTRU-Statements-Round2.pdf
+https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-2/submissions/NTRU-Round2.zip
+https://ntru.org/
+
+
+# Cover sheet
+./Supporting_Documentation/coversheet.pdf
+
+# Main specification document
+./Supporting_Documentation/ntru.pdf
+
+# Reference implementation of NTRU-hps2048509
+./Reference_Implementation/crypto_kem/ntru-hps2048509/kem.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/params.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/PQCgenKAT_kem.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/packq.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/owcpa.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/fips202.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/kem.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/poly.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/rng.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/owcpa.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/poly.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/verify.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/Makefile
+./Reference_Implementation/crypto_kem/ntru-hps2048509/crypto_sort.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/sample.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/api.h
+./Reference_Implementation/crypto_kem/ntru-hps2048509/crypto_sort.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/verify.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/pack3.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/fips202.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/rng.c
+./Reference_Implementation/crypto_kem/ntru-hps2048509/sample.c
+
+# Reference implementation of NTRU-hps2048677
+./Reference_Implementation/crypto_kem/ntru-hps2048677/kem.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/params.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/PQCgenKAT_kem.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/packq.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/owcpa.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/fips202.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/kem.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/poly.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/rng.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/owcpa.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/poly.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/verify.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/Makefile
+./Reference_Implementation/crypto_kem/ntru-hps2048677/crypto_sort.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/sample.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/api.h
+./Reference_Implementation/crypto_kem/ntru-hps2048677/crypto_sort.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/verify.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/pack3.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/fips202.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/rng.c
+./Reference_Implementation/crypto_kem/ntru-hps2048677/sample.c
+
+# Reference implementation of NTRU-hps4096821
+./Reference_Implementation/crypto_kem/ntru-hps4096821/kem.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/params.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/PQCgenKAT_kem.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/packq.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/owcpa.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/fips202.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/kem.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/poly.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/rng.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/owcpa.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/poly.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/verify.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/Makefile
+./Reference_Implementation/crypto_kem/ntru-hps4096821/crypto_sort.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/sample.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/api.h
+./Reference_Implementation/crypto_kem/ntru-hps4096821/crypto_sort.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/verify.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/pack3.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/fips202.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/rng.c
+./Reference_Implementation/crypto_kem/ntru-hps4096821/sample.c
+
+# Reference implementation of NTRU-hrss701
+./Reference_Implementation/crypto_kem/ntru-hrss701/kem.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/params.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/PQCgenKAT_kem.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/packq.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/owcpa.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/fips202.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/kem.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/poly.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/rng.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/owcpa.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/poly.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/verify.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/Makefile
+./Reference_Implementation/crypto_kem/ntru-hrss701/sample.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/api.h
+./Reference_Implementation/crypto_kem/ntru-hrss701/verify.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/pack3.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/fips202.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/rng.c
+./Reference_Implementation/crypto_kem/ntru-hrss701/sample.c
+
+# Optimized implementation of NTRU-hps2048509
+# (Copy of reference implementation)
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/kem.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/params.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/PQCgenKAT_kem.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/packq.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/owcpa.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/fips202.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/kem.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/poly.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/rng.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/owcpa.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/poly.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/verify.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/Makefile
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/crypto_sort.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/sample.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/api.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/crypto_sort.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/verify.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/pack3.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/fips202.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/rng.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048509/sample.c
+
+# Optimized implementation of NTRU-hps2048677
+# (Copy of reference implementation)
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/kem.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/params.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/PQCgenKAT_kem.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/packq.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/owcpa.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/fips202.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/kem.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/poly.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/rng.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/owcpa.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/poly.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/verify.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/Makefile
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/crypto_sort.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/sample.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/api.h
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/crypto_sort.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/verify.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/pack3.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/fips202.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/rng.c
+./Optimized_Implementation/crypto_kem/ntru-hps2048677/sample.c
+
+# Optimized implementation of NTRU-hps4096821
+# (Copy of reference implementation)
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/kem.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/params.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/PQCgenKAT_kem.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/packq.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/owcpa.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/fips202.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/kem.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/poly.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/rng.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/owcpa.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/poly.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/verify.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/Makefile
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/crypto_sort.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/sample.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/api.h
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/crypto_sort.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/verify.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/pack3.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/fips202.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/rng.c
+./Optimized_Implementation/crypto_kem/ntru-hps4096821/sample.c
+
+# Optimized implementation of NTRU-hrss701
+# (Copy of reference implementation)
+./Optimized_Implementation/crypto_kem/ntru-hrss701/kem.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/params.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/PQCgenKAT_kem.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/packq.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/owcpa.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/fips202.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/kem.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/poly.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/rng.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/owcpa.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/poly.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/verify.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/Makefile
+./Optimized_Implementation/crypto_kem/ntru-hrss701/sample.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/api.h
+./Optimized_Implementation/crypto_kem/ntru-hrss701/verify.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/pack3.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/fips202.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/rng.c
+./Optimized_Implementation/crypto_kem/ntru-hrss701/sample.c
+
+# AVX2 optimized implementation of NTRU-hrss701
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/kem.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/params.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_s3_inv.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_42_701_shufbytes.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/PQCgenKAT_kem.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_12_701_shufbytes.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_6_701_patience.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_rq_mul.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/PQCkemKAT_1450.rsp
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_s3_mul.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_15_701_shufbytes.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/packq.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/owcpa.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/fips202.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_168_701_shufbytes.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/kem.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_84_701_shufbytes.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/rng.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_27_701_shufbytes.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/owcpa.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_336_701_shufbytes.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/verify.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/PQCkemKAT_1450.req
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_1_701_patience.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_s3_to_rq.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/square_3_701_patience.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/Makefile
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_r2_inv.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/sample.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/api.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/verify.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/pack3.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_r2_mul.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_rq_to_s3.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/fips202.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_r2_inv.h
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/rng.c
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/poly_rq_mul_x_minus_1.s
+./Additional_Implementations/avx2/crypto_kem/ntru-hrss701/sample.c
+
+# KAT values of NTRU-hps2048509
+# (produced by PQCgenKAT_sign (provided by NIST))
+./KAT/ntru-hps2048509/PQCkemKAT_935.req
+./KAT/ntru-hps2048509/PQCkemKAT_935.rsp
+
+# KAT values of NTRU-hps2048677
+# (produced by PQCgenKAT_sign (provided by NIST))
+./KAT/ntru-hps2048677/PQCkemKAT_1234.req
+./KAT/ntru-hps2048677/PQCkemKAT_1234.rsp
+
+# KAT values of NTRU-hps4096821
+# (produced by PQCgenKAT_sign (provided by NIST))
+./KAT/ntru-hps4096821/PQCkemKAT_1590.req
+./KAT/ntru-hps4096821/PQCkemKAT_1590.rsp
+
+# KAT values of NTRU-hrss701
+# (produced by PQCgenKAT_sign (provided by NIST))
+./KAT/ntru-hrss701/PQCkemKAT_1450.rsp
+./KAT/ntru-hrss701/PQCkemKAT_1450.req
+

@@ -1,0 +1,47 @@
+.TH LIBKECCAK_STATE_UNMARSHAL 3 LIBKECCAK
+.SH NAME
+libkeccak_state_unmarshal - Unharshals a hash state
+.SH SYNOPSIS
+.nf
+#include <libkeccak.h>
+
+size_t libkeccak_state_unmarshal(struct libkeccak_state *\fIstate\fP, const void *\fIdata\fP);
+.fi
+.PP
+Link with
+.IR -lkeccak .
+.SH DESCRIPTION
+The
+.BR libkeccak_state_unmarshal ()
+function unmarshals a hash state from the beginning
+of
+.IR data .
+and stores it in
+.IR *state .
+.I state
+may be
+.IR NULL .
+.SH RETURN VALUES
+The
+.BR libkeccak_state_unmarshal ()
+returns the number of bytes reads from
+.I data
+upon successful completion.
+On error, -1 is returned and
+.I errno
+is set to describe the error.
+If
+.I state
+is
+.IR NULL ,
+the number the function will always be
+successful and return a positive value,
+this value is the number of bytes that
+make un the marshalled state.
+.SH ERRORS
+The
+.BR libkeccak_state_unmarshal ()
+function may fail for any specified for the function
+.BR malloc (3).
+.SH SEE ALSO
+.BR libkeccak_state_marshal (3)

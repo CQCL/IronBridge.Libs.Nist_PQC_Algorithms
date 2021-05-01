@@ -1,0 +1,38 @@
+.TH LIBKECCAK_HMAC_COPY 3 LIBKECCAK
+.SH NAME
+libkeccak_hmac_copy - Copies an HMAC-hashing state
+.SH SYNOPSIS
+.nf
+#include <libkeccak.h>
+
+int libkeccak_hmac_copy(struct libkeccak_hmac_state *\fIdest\fP, const struct libkeccak_hmac_state *\fIsrc\fP);
+.fi
+.PP
+Link with
+.IR -lkeccak .
+.SH DESCRIPTION
+The
+.BR libkeccak_hmac_copy ()
+function initialises
+.I *dest
+to be identical to
+.IR *src .
+This includes all members of the
+.B struct libkeccak_hmac_state
+structure, including the state of the sponge and the
+message chunk buffer.
+.SH RETURN VALUES
+The
+.BR libkeccak_hmac_copy ()
+function returns 0 upon successful completion.
+On error, -1 is returned and
+.I errno
+is set to describe the error.
+.SH ERRORS
+The
+.BR libkeccak_hmac_copy ()
+function may fail for any specified for the function
+.BR malloc (3).
+.SH SEE ALSO
+.BR libkeccak_hmac_duplicate (3),
+.BR libkeccak_hmac_initialise (3)

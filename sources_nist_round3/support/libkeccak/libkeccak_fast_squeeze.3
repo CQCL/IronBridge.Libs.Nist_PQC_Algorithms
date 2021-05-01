@@ -1,0 +1,34 @@
+.TH LIBKECCAK_FAST_SQUEEZE 3 LIBKECCAK
+.SH NAME
+libkeccak_fast_squeeze - Runs the squeeze phase a number of times
+.SH SYNOPSIS
+.nf
+#include <libkeccak.h>
+
+void libkeccak_fast_squeeze(struct libkeccak_state *\fIstate\fP, long int \fItimes\fP);
+.fi
+.PP
+Link with
+.IR -lkeccak .
+.SH DESCRIPTION
+The
+.BR libkeccak_fast_squeeze ()
+function runs the Keccak squeeze phase, on the the hash
+process described by
+.IR *state ,
+as many times are required to get
+.I times
+additional digests.
+.SH RETURN VALUES
+The
+.BR libkeccak_fast_squeeze ()
+function does not return any value.
+.SH ERRORS
+The
+.BR libkeccak_fast_squeeze ()
+function cannot fail.
+.SH SEE ALSO
+.BR libkeccak_digest (3),
+.BR libkeccak_fast_digest (3),
+.BR libkeccak_simple_squeeze (3),
+.BR libkeccak_squeeze (3)

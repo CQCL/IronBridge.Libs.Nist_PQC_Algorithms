@@ -1,0 +1,37 @@
+.TH LIBKECCAK_HMAC_MARSHAL 3 LIBKECCAK
+.SH NAME
+libkeccak_hmac_marshal - Marshals an HMAC-hashing state
+.SH SYNOPSIS
+.nf
+#include <libkeccak.h>
+
+size_t libkeccak_hmac_marshal(const struct libkeccak_hmac_state *\fIstate\fP, void *\fIdata\fP);
+.fi
+.PP
+Link with
+.IR -lkeccak .
+.SH DESCRIPTION
+The
+.BR libkeccak_hmac_marshal ()
+function marshals
+.I *state
+into the beginning of
+.IR data .
+.PP
+Specific
+.I NULL
+as
+.I data
+to get minimum usable allocation size for
+.IR data .
+.SH RETURN VALUES
+The
+.BR libkeccak_hmac_marshal ()
+returns the number of bytes written to
+.IR data .
+.SH ERRORS
+The
+.BR libkeccak_hmac_marshal ()
+function cannot fail.
+.SH SEE ALSO
+.BR libkeccak_hmac_unmarshal (3)

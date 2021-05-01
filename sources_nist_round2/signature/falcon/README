@@ -1,0 +1,99 @@
+Falcon
+======
+
+This archive contains the following files and directories:
+
+Reference_Implementation/
+    falcon512/
+        Reference implementation of Falcon with recommended
+        parameters "N=512,q=12289", using NIST API (api.h).
+
+    falcon768/
+        Reference implementation of Falcon with recommended
+        parameters "N=768,q=18433", using NIST API (api.h).
+
+    falcon1024/
+        Reference implementation of Falcon with recommended
+        parameters "N=1024,q=12289", using NIST API (api.h).
+
+Optimized_Implementation/
+    falcon512/
+        Optimized implementation of Falcon with recommended
+        parameters "N=512,q=12289", using NIST API (api.h).
+
+    falcon768/
+        Optimized implementation of Falcon with recommended
+        parameters "N=768,q=18433", using NIST API (api.h).
+
+    falcon1024/
+        Optimized implementation of Falcon with recommended
+        parameters "N=1024,q=12289", using NIST API (api.h).
+
+KAT/
+    generator/
+        NIST-provided code to generate KAT files. To use them, copy
+        the files from one of the reference/optimized implementations
+        described above into a temporary directory, along with the
+        three files from this directory, then compile all the C files
+        together. The resulting executable will generate a '.req' and
+        a '.rsp' file, that should match the KAT files below.
+
+    falcon512-KAT.req
+    falcon512-KAT.rsp
+        KAT vectors for Falcon-512 (N = 512, q = 12289)
+
+    falcon768-KAT.req
+    falcon768-KAT.rsp
+        KAT vectors for Falcon-768 (N = 768, q = 18433)
+
+    falcon1024-KAT.req
+    falcon1024-KAT.rsp
+        KAT vectors for Falcon-1024 (N = 1024, q = 12289)
+
+Supporting_Documentation/
+    2A_cover_sheet.pdf
+        Cover sheet for submission.
+    falcon.pdf
+        Detailed specification of Falcon.
+    Statements/
+        Statements of intellectual property by submitters.
+
+Extra/
+    c/
+        Reference implementation, basic tests and command-line tool.
+        This code offers an API meant for easy integration in
+        applications.
+
+
+Notes
+=====
+
+The "reference" and "optimized" implementations are identical to each
+other. They are also the same code as the implementation provided in the
+"Extra/c/" directory, except that they implement the NIST API (derived
+from eBATS) but lack the command-line tools and support Makefile; also,
+code for obtaining random seeds from the operating system is removed
+from these implementations.
+
+These implementations use "ANSI C", by which we mean that they conform
+to the 1989 version of the C standard, with the addition of the following
+features that have been included in the 1999 version of the C standard:
+
+ - standard header <stdint.h> with the exact-width types int16_t, int32_t,
+   uint32_t, int64_t and uint64_t;
+
+ - 'inline' function qualifier;
+
+ - 'restrict' type qualifier.
+
+The implementation in "Extra/c/" has its own Makefile; it compiles into
+two command-line tools, "test_falcon" and "falcon". "test_falcon" runs
+some self-tests. "falcon" is a tool that can generate and encode key
+pairs, compute signatures on files, and verify such signatures.
+
+
+License
+=======
+
+This Falcon implementation is provided under the MIT license, whose text
+is included at the start of all source files.
