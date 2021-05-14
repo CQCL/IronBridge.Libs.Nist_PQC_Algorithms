@@ -13,11 +13,11 @@ CFLAGS= -fPIC -O3 -march=native -mtune=native -Wall  -I/$(DIR)
 LDFLAGS= -lcrypto -ldl -L. -lkeccak
 LIBS = -L${CURDIR}/libkeccak.a
 
-LIB_SOURCES_CQC= $(CQCRANDOM_SRC) benes.c bm.c controlbits.c decrypt.c encrypt.c gf.c operations.c pk_gen.c root.c sk_gen.c synd.c transpose.c util.c crypto_stream_aes256ctr.c
+LIB_SOURCES_CQC= $(CQCRANDOM_SRC) benes.c bm.c controlbits.c decrypt.c encrypt.c gf.c operations.c pk_gen.c root.c sk_gen.c synd.c transpose.c util.c
 HEADERS= 
 
 $(LIB_TARGET_CQC): $(HEADERS) $(LIB_SOURCES_CQC)
-	$(CC) $(CFLAGS) -DSMALL_STACK -shared -o $@ $(LIB_SOURCES_CQC) $(LDFLAGS)
+	$(CC) $(CFLAGS) -DCRYPTO_NAMESPACE\(s\)=mceliece_\#\#s -DSMALL_STACK -shared -o $@ $(LIB_SOURCES_CQC) $(LDFLAGS)
 
 shared: $(LIB_TARGET_CQC)
 

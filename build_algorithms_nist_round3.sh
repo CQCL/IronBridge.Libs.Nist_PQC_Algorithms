@@ -55,7 +55,6 @@ cd ../../..
 ###################################
 echo "Building McEliece..."
 cd mceliece/Reference_Implementation/kem
-echo "Building McEliece... <======================== TODO: Both McEliece builds are failing. Need fixing. Skipping."
 # JG: In round2 we built only mceliece6960119 and mceliece8192128
 #make --no-print-directory -s -C mceliece348864   clean shared && sudo cp mceliece348864/*.so   $LIB_TARGET
 #make --no-print-directory -s -C mceliece348864f  clean shared && sudo cp mceliece348864f/*.so  $LIB_TARGET
