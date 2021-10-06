@@ -2,7 +2,7 @@
 Nist Post-Quantum Cryptography (PQC) Algorithms used by RestServerCpp
 
 
-The libs/crypto folder of this repo contains an unaltered copy (except for the
+The libs/crypto folder of this repo contains an **unaltered** copy (except for the
 makefiles) of the Reference Implementation of each PQC algorithm.
 
 ### Original Sources
@@ -58,9 +58,9 @@ The library names have been adjusted to indicate their contents...
 * Suffix: "_NR3_CQCRNG" = Nist Round 3 with CQC rng
 
 
-In the ResServerCpp sources, the set of libraries that is used by changing the value of _whichAlgorithms variable.
+In the _**RestServerCpp**_ sources, the set of libraries that is used by changing the value of _**_whichAlgorithms**_ variable.
 
-See ./IronBridge.Software.RestServerCpp/server/sources/Ironbridge/Api/Core/RandomProducer.h
+See **./IronBridge.Software.RestServerCpp/server/sources/Ironbridge/Api/Core/RandomProducer.h**__
 
 ```
     enum
